@@ -4,11 +4,11 @@
 @include('frontends.components.scroll-top-button')
 
 <section class="w-full bg-[#f8efff] relative">
-    <div class="w-full max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2  items-center lg:px-10 overflow-hidden">
+    <div class="w-full max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2  items-start lg:px-10 overflow-hidden">
         <div class="px-4 text-[#401457] pt-10" data-aos="fade-right" data-aos-duration="1000">
             <h1 class="text-[30px] mb-10 md:text-[50px] uppercase lg:leading-[55px] ">{{ $hero->title[app()->getLocale()] }}</h1>
             <!-- 1.update -->
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScVamkswJpHoulIwjaWxB1_QL_RkVIg3Xd8gfrGkCyWESmzGQ/viewform?usp=header"
+            <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLScVamkswJpHoulIwjaWxB1_QL_RkVIg3Xd8gfrGkCyWESmzGQ/viewform?usp=header"
                 class="hidden lg:inline-flex items-center gap-4 px-4 md:py-2 py-2  uppercase bg-[#401457] rounded-full md:mb-[350px] lg:mb-[400px] ms-[100px] md:ms-[190px] top-10">
                 <span class="font-[600] md:font-[500] text-[#fff]  text-[12px] md:text-[14px]">{{ __('messages.book_now') }}</span>
                 <span class="bg-[#fff] w-8 h-8 rounded-full flex items-center justify-center ">
@@ -18,16 +18,16 @@
                         <path d="M13 7l5 5l-5 5" />
                     </svg>
                 </span>
-            </a>
+            </a> -->
         </div>
         <!-- 2. update -->
         <div class="flex justify-center items-center w-full h-full relative">
             <div class="flex items-end pt-16 md:mt-0" data-aos="fade-up" data-aos-duration="1000">
                 <img src="{{ asset($hero->image) }}" alt="" class="w-[80%] lg:w-[90%] mx-auto">
             </div>
-            <div class="absolute top-16 left-4 sm:left-10 ">
+            <div class="absolute top-16 left-4 sm:left-10 md:left-20 md:top-20 lg:-left-6 lg:top-32">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScVamkswJpHoulIwjaWxB1_QL_RkVIg3Xd8gfrGkCyWESmzGQ/viewform?usp=header"
-                    class="inline-flex lg:hidden items-center gap-2 px-2 py-2 uppercase bg-[#401457] rounded-full">
+                    class="inline-flex items-center gap-2 px-2 py-2 uppercase bg-[#401457] rounded-full">
                     <span class="text-[12px] md:text-[16px] font-[600] text-[#fff]">{{ __('messages.book_now') }}</span>
                     <span class="bg-[#fff] w-8 h-8 rounded-full flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
