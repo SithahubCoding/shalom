@@ -75,7 +75,7 @@
         <div class="grid grid-cols-1 p-2 lg:grid-cols-3 items-start justify-center my-2 md:my-5 xl:my-10 sm:bg-[#fff] md:bg-[#f8efff] overflow-hidden border-s-3 ">
             <div class="flex flex-col items-center justify-center w-full h-full" data-aos="fade-up" data-aos-duration="1000">
                 <div class="bg-[#f8efff] md:bg-[#f8efff]  flex  justify-center overflow-hidden md:overflow-visible w-[320px] h-[320px] md:w-full md:h-full md:rounded-[0] rounded-[100%]">
-                    <img src="{{ asset($item->image) }}" alt="" class="w-[80%]  h-auto object-fill rounded-2xl">
+                    <img src="{{ asset($item->image) }}" alt="" class="w-[80%] h-auto object-contain object-buttom md:border-0 border-r-4 border-b-4 border-l-4 border-[#401457] md:[border-radius:0%] [border-radius:25%]">
                 </div>
             </div>
             <div class="col-span-2 text-[13px] xl:text-[15px] p-4 text-justify" data-aos="fade-left" data-aos-duration="1000">
