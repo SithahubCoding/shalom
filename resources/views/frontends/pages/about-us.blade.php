@@ -116,10 +116,10 @@
 </section>
 
 {{-- certifical --}}
-<section class="w-full py-10 text-[#401457] px-4 md:px-10">
-    <div class="w-full flex items-center justify-center max-w-4xl mx-auto" data-aos="fade-right" data-aos-duration="1000">
+<section class="w-full pb-10 text-[#401457] px-4 md:px-10">
+    <div class="w-full flex flex-col lg:flex-row items-center justify-center max-w-4xl mx-auto" data-aos="fade-right" data-aos-duration="1000">
         @foreach ($certificates as $certificate)
-        <img src="{{ asset($certificate->image) }}" alt="" class="w-[50%] h-auto" loading="lazy">
+        <img src="{{ asset($certificate->image) }}" alt="" class="w-full sm:w-[70%] lg:w-[50%] h-auto" loading="lazy">
         @endforeach
     </div>
 </section>
