@@ -6,7 +6,7 @@
 <header class="">
     <div
         class="w-full h-[3rem] sm:h-[4rem] xl:h-[5rem] px-4 sm:px-6 xl:px-12 flex items-center justify-between bg-[#401457] text-[#fff] font-[400] text-[12px] xl:text-[14px] z-[100]">
-        <h1 class="hidden lg:flex">{{ __('messages.contact_header') }} :</h1>
+        <h1 class="hidden lg:flex"></h1>
 
         <div class="hidden lg:flex items-center gap-10">
             <div class="flex items-center gap-10">
