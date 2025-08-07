@@ -2,7 +2,6 @@
 @section('content')
 @include('frontends.components.loading')
 @include('frontends.components.scroll-top-button')
-
 {{-- hero --}}
 <section class="w-full bg-[#f8efff] relative py-10">
     <div class="w-full max-w-7xl mx-auto px-4" data-aos="fade-right" data-aos-duration="1000">
@@ -124,32 +123,8 @@
     </div>
 </section> -->
 
-<!-- <section class="w-full pb-10 text-[#401457] px-4 md:px-10">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-4xl mx-auto items-start" data-aos="fade-right" data-aos-duration="1000">
-        @foreach ($certificates as $certificate)
-        <div class="w-full h-[500px] object-cover">
-            <img src="{{ asset($certificate->image) }}" alt="" class="w-full h-full sm:w-[70%] lg:w-[100%]  object-cover" loading="lazy">
-        </div>
-        @endforeach
-    </div>
-</section> -->
 
-<!-- <section class="text-[#401457]">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 max-w-5xl mx-auto items-center" data-aos="fade-right" data-aos-duration="1000">
-    @foreach ($certificates as $certificate)
-    <div class="flex justify-center items-center h-[600px] bg-white overflow-hidden">
-      <img
-        src="{{ asset($certificate->image) }}"
-        alt="Certificate"
-        class="max-h-full object-contain sm:w-[70%] lg:w-[50%]"
-        style="width: auto; max-width: {{ $loop->index === 0 ? '50%' : '100%' }}; {{ $loop->index === 0 ? 'sm-10%' : '100%'  }}"
-        loading="lazy"
-      >
-    </div>
-    @endforeach
-  </div>
-</section> -->
-<section class="text-[#401457]">
+<section class="text-[#401457] hidden lg:block">
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto items-center" data-aos="fade-right" data-aos-duration="1000">
     @foreach ($certificates as $certificate)
     <div class="flex justify-center items-center h-[350px] md:h-[500px] md-0 md:mb-10 bg-white overflow-hidden">
@@ -162,6 +137,29 @@
       >
     </div>
     @endforeach
+  </div>
+</section>
+
+<section class="w-full px-4 py-10 lg:hidden block bg-gray-50">
+  <div class="max-w-5xl mx-auto">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        @foreach ($certificates as $certificate)
+          <div class="swiper-slide flex justify-center items-center bg-white shadow rounded h-[350px] md:h-[500px]">
+            <img
+              src="{{ asset($certificate->image) }}"
+              alt="Certificate"
+              class="max-h-full object-contain
+                    {{ $loop->index === 0 ? 'w-[60%] lg:w-[50%]' : 'w-[90%] lg:w-[110%]' }}"
+              loading="lazy"
+            >
+          </div>
+        @endforeach
+      </div>
+     <!-- <div class="swiper-button-next !text-[#401457] !w-10 !h-10 !bg-white !shadow-lg !rounded-full after:!text-2xl">ល</div>
+     <div class="swiper-button-prev !text-[#401457] !w-10 !h-10 !bg-white !shadow-lg !rounded-full after:!text-2xl">រ</div> -->
+      <div class="swiper-pagination "></div>
+    </div>
   </div>
 </section>
 

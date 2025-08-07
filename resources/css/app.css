@@ -9,3 +9,12 @@
 @source "../../storage/framework/views/*.php";
 
 @plugin "daisyui";
+
+
+.swiper-pagination-bullet {
+    @apply w-3 h-3 bg-gray-400 opacity-70;
+}
+
+.swiper-pagination-bullet-active {
+    @apply bg-[#401457] opacity-100;
+}
