@@ -68,7 +68,7 @@
 </section>
 
 {{-- team --}}
-<section class="w-full py-10 text-[#401457] px-4 md:px-10">
+<section class="w-full pt-10 text-[#401457] px-4 md:px-10">
     <div class="w-full max-w-7xl mx-auto">
         @foreach ($team as $item)
         <!-- 3.update -->
@@ -108,19 +108,61 @@
 
         @endforeach
 
-        <div class="flex flex-col items-center py-10 gap-10" data-aos="fade-up" data-aos-duration="1000">
-            <img src="{{ asset('assets/images/home/image-1.png') }}" alt="" class="w-full md:w-[50%] h-auto">
+        <div class="flex flex-col items-center pt-10 gap-10" data-aos="fade-up" data-aos-duration="1000">
+            <img src="{{ asset('assets/images/home/image-1.png') }}" alt="" class="w-full md:w-[50%] h-auto object-fill">
             <p class="text-[22px] xl:text-[30px] uppercase text-center bg-[#f8efff] px-6 py-4 rounded-md">“{{ __('messages.WE SUPPORT PROFESSIONALLY') }}”</p>
         </div>
     </div>
 </section>
 
 {{-- certifical --}}
-<section class="w-full pb-10 text-[#401457] px-4 md:px-10">
+<!-- <section class="w-full pb-10 text-[#401457] px-4 md:px-10">
     <div class="w-full flex flex-col lg:flex-row items-center justify-center max-w-4xl mx-auto" data-aos="fade-right" data-aos-duration="1000">
         @foreach ($certificates as $certificate)
-        <img src="{{ asset($certificate->image) }}" alt="" class="w-full sm:w-[70%] lg:w-[50%] h-auto" loading="lazy">
+        <img src="{{ asset($certificate->image) }}" alt="" class="w-full sm:w-[70%] lg:w-[50%] h-auto object-cover" loading="lazy">
         @endforeach
     </div>
+</section> -->
+
+<!-- <section class="w-full pb-10 text-[#401457] px-4 md:px-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-4xl mx-auto items-start" data-aos="fade-right" data-aos-duration="1000">
+        @foreach ($certificates as $certificate)
+        <div class="w-full h-[500px] object-cover">
+            <img src="{{ asset($certificate->image) }}" alt="" class="w-full h-full sm:w-[70%] lg:w-[100%]  object-cover" loading="lazy">
+        </div>
+        @endforeach
+    </div>
+</section> -->
+
+<!-- <section class="text-[#401457]">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 max-w-5xl mx-auto items-center" data-aos="fade-right" data-aos-duration="1000">
+    @foreach ($certificates as $certificate)
+    <div class="flex justify-center items-center h-[600px] bg-white overflow-hidden">
+      <img
+        src="{{ asset($certificate->image) }}"
+        alt="Certificate"
+        class="max-h-full object-contain sm:w-[70%] lg:w-[50%]"
+        style="width: auto; max-width: {{ $loop->index === 0 ? '50%' : '100%' }}; {{ $loop->index === 0 ? 'sm-10%' : '100%'  }}"
+        loading="lazy"
+      >
+    </div>
+    @endforeach
+  </div>
+</section> -->
+<section class="text-[#401457]">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto items-center" data-aos="fade-right" data-aos-duration="1000">
+    @foreach ($certificates as $certificate)
+    <div class="flex justify-center items-center h-[350px] md:h-[500px] md-0 md:mb-10 bg-white overflow-hidden">
+      <img
+        src="{{ asset($certificate->image) }}"
+        alt="Certificate"
+        class="max-h-full object-contain
+               {{ $loop->index === 0 ? 'w-[60%] lg:w-[50%]' : 'w-[90%] lg:w-[110%]' }}"
+        loading="lazy"
+      >
+    </div>
+    @endforeach
+  </div>
 </section>
+
 @endsection
