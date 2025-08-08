@@ -25,7 +25,7 @@
             </a>
         </div>
         <!-- 1. update -->
-        <div class="col-span-2 w-full flex justify-center items-center">
+        <div class="col-span-2 w-full flex justify-center items-center mt-5 md:mt-0 ">
             <div class="pt-4 lg:pt-0 flex" data-aos="fade-up" data-aos-duration="1000">
                 <img src="{{ asset('assets/images/people-3.png') }}" alt="" class="w-[80%] ms-10 sm:w-[60%] lg:w-[80%] object-contain">
             </div>
@@ -33,6 +33,7 @@
 
         <div class="absolute top-2 right-0 grid grid-cols-1 mt-30 md:mt-0 lg:mt-0  lg:right-10">
             <img src="{{ asset('assets/images/logo-3.png') }}" alt="" class="w-30 h-30">
+            <p class="mt-[105px] md:mt-[110px] absolute text-[#401457]  left-3 md:left-0 font-[700] text-[10px] md:text-[14px]">EXPERTISE FOR</p>
         </div>
     </div>
 </section>

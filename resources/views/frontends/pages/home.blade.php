@@ -14,6 +14,7 @@
                 <div
                     class="flex flex-col md:flex-row items-center lg:items-start pt-6 gap-4 lg:gap-10 text-[13px] xl:text-[15px]">
                     <img src="{{ asset($hero->icon) }}" alt="" class="w-40 h-auto">
+
                     <div class="pt-2 lg:pt-4 pb-4">
                         <div class="prose">
                             {!! $hero->content[app()->getLocale()] !!}
@@ -52,15 +53,15 @@
                 </div>
             </div>
 
-            <div class="flex items-end justify-center lg:col-span-4 pt-4 lg:pt-0" data-aos="fade-up"
-                data-aos-duration="1000">
-                <img src="{{ asset($hero->image) }}" alt="" class="w-[90%] sm:w-[70%] lg:w-full">
+            <div class="flex items-end justify-center lg:col-span-4 pt-4 lg:pt-0 relative" data-aos="fade-up"
+                data-aos-duration="1000 ">
+                <img src="{{ asset('assets/images/home/ourservice.png') }}" alt="" class="w-[90%] sm:w-[70%] lg:w-full">
             </div>
         </div>
     </section>
 
     {{-- service --}}
-    <section class="w-full max-w-7xl mx-auto px-4 sm:px-10 pt-4 text-[#401457]">
+    <section class="w-full max-w-7xl mx-auto px-4 sm:px-10 pt-4 text-[#401457] ">
         <h1 class="text-[16px] xl:text-[20px]" data-aos="fade-right" data-aos-duration="1000">{{ __('messages.what_we_do') }}</h1>
         <hr class="my-2 border border-b-[#401457]" data-aos="fade-right" data-aos-duration="1000">
         <h1 class="text-[22px] xl:text-[30px]" data-aos="fade-right" data-aos-duration="1000">{{ $heroes->title[app()->getLocale()] }}</h1>
