@@ -7,7 +7,7 @@ return [
     'clients' => 'Clients',
     'industries' => 'Industries',
     'event' => 'Events',
-    'contact' => 'Contact us',
+    'contact' => 'Contact Us',
     'contact_header' => 'contact:',
     'tel_header' => 'Tel:',
     'email_header' => 'Email:',
@@ -24,7 +24,7 @@ return [
     'A' => 'A',
 
 
-    'what_we_do' => "What we do",
+    'what_we_do' => "What We Do",
     'more_details' => "More Detail",
     'email' => "Email Address",
     'phone' => "Phone Number",
@@ -36,15 +36,23 @@ return [
     'form_title' => "We're here to help. Whether you have questions about our services or need a ssistance with a tax-related issue, feel free to reach out",
     'first_name' => 'First Name',
     'your_first_name' => 'Your First Name',
-    'second_name' => 'Second Name',
-    'your_second_name' => 'Your Second Name',
+    'second_name' => 'Last Name',
+    'your_second_name' => 'Your Last Name',
     'email_form' => 'Email',
     'your_email_form' => 'Your Email',
-    'phone_form' => 'Phone',
+    'phone_form' => "Your Phone Number",
     'your_phone_form' => 'Your Phone',
     'seveice_form' => 'Which service are you interested in?',
     'your_seveice_form' => 'Please Choose One',
     'message' => 'Message',
-    'message_form' => 'To better assist your, please describe how we can help...',
+    'message_form' => 'Please describe how we can help...',
     'submit' => 'Submit',
+
+    'company'=>' Company Name',
+    'your_company'=>'Your company name',
+    'job_title' => 'Profession',
+    'form_job_title'=>'Your job title',
+
+
+
 ];
