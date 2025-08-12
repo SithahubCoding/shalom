@@ -122,81 +122,6 @@
                 </div>
                 <hr class="bg-[#401457] border-[#401457] border-b-0 my-5 md:my-10 max-w-7xl mx-auto">
             @else
-                <!-- <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-4 md:gap-6 py-3 md:py-6">
-                    <div class="swiper mySwiper order-2 lg:order-none">
-                        @if (!empty($images))
-                            <div class="swiper-wrapper">
-                                @foreach ($images as $img)
-                                    <div class="swiper-slide">
-                                        <img src="{{ asset($img) }}" alt="Event image"
-                                            class="w-full h-full object-contain rounded-md">
-                                            <div class="order-2 lg:order-none">
-                                                @if (!empty($images) && !empty($images[0]))
-                                                    <img src="{{ asset($images[0]) }}" alt="Event image" class="w-full h-full object-contain rounded-md" />
-                                                @endif
-                                           </div>
-                                    </div>
-                                @endforeach
-                            </div>
-                        @endif
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <div class="bg-white p-2 md:p-6 order-1 lg:order-none">
-                        <h2 class="text-[22px] xl:text-[30px] text-[#401457] font-semibold mb-4">
-                            {{ $event->title[app()->getLocale()] ?? '' }}
-                        </h2>
-
-                        <div class="prose text-[13px] xl:text-[15px] text-[#401457] mb-4 max-w-none text-justify">
-                            {!! $event->content[app()->getLocale()] ?? '' !!}
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-4 md:gap-6 py-3 md:py-6">
-                    <div class="swiper mySwiper order-2 lg:order-none">
-                        @if (!empty($images))
-                            <div class="swiper-wrapper">
-                                @foreach ($images as $img)
-                                    <div class="swiper-slide">
-                                            <div class="order-2 lg:order-none">
-                                                @if (!empty($images) && !empty($images[0]))
-                                                    <img src="{{ asset($images[0]) }}" alt="Event image" class="w-full h-full object-contain rounded-md" />
-                                                @endif
-                                           </div>
-                                    </div>
-                                @endforeach
-                            </div>
-                        @endif
-                        <div class="swiper-pagination"></div>
-                    </div>
-
-                    <div class="swiper mySwiper order-2 lg:order-none">
-                        @if (!empty($images) && !empty($images[0]))
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="{{ asset($images[1]) }}" alt="Event image" class="w-full h-full object-contain rounded-md" />
-                                </div>
-                                @foreach ($images as $key => $img)
-                                    @if ($key != 0)
-                                        <div class="swiper-slide hidden">
-                                            <img src="{{ asset($img) }}" alt="Hidden image" class="w-full h-full object-contain rounded-md" />
-                                        </div>
-                                    @endif
-                                @endforeach
-                            </div>
-                        @endif
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <div class="bg-white p-2 md:p-6 order-1 lg:order-none">
-                        <h2 class="text-[22px] xl:text-[30px] text-[#401457] font-semibold mb-4">
-                            {{ $event->title[app()->getLocale()] ?? '' }}
-                        </h2>
-                        <div class="prose text-[13px] xl:text-[15px] text-[#401457] mb-4 max-w-none text-justify">
-                            {!! $event->content[app()->getLocale()] ?? '' !!}
-                        </div>
-                    </div>
-                </div> -->
-
                 <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-4 md:gap-6 py-3 md:py-6">
                     <div class="swiper mySwiper order-2 lg:order-none">
                         @if (!empty($images))
@@ -221,7 +146,6 @@
                         </div>
                     </div>
                 </div>
-
                 <hr class="bg-[#401457] border-[#401457] border-b-0 my-5 md:my-10 max-w-7xl mx-auto">
             @endif
         @endforeach
@@ -229,18 +153,3 @@
     </section>
 @endsection
 
-<!--
-
-Shalom Solution & Refer Globally, a collaboration built on trust and shared purpose, uniting hearts for a meaningful cause. To extend love and compassion by supporting underprivileged communities in Timor Leste.
-
-
-
-We aim to improve their quality of life through practical donations and heartfelt interactions.
-
-
-
-We donated essential items to:
-
-Missionary Dominican Sisters of the Rosary Dili
-Uma Mahon Orphanage
--->

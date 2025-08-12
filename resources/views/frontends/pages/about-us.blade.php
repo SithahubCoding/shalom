@@ -73,8 +73,8 @@
         <!-- 3.update -->
         <div class="grid grid-cols-1 lg:grid-cols-3 items-center justify-center my-2 md:my-5 xl:my-10 sm:bg-[#fff] md:bg-[#f8efff] overflow-hidden border-s-3 ">
             <div class="flex flex-col items-center justify-center w-full h-full" data-aos="fade-up" data-aos-duration="1000">
-                <div class="bg-[#f8efff] md:bg-[#f8efff] flex items-end overflow-hidden md:overflow-visible w-[320px] h-[320px] md:w-full md:h-full md:rounded-[0] rounded-[100%]">
-                    <img src="{{ asset($item->image) }}" {{ $loop->last ? 'w-[70%] h-[70%]' : ($loop->index === 0 ? 'w-[60%] lg:w-[50%]' : 'w-[90%] lg:w-[110%]') }} alt="" class="w-[80%] h-auto object-contain object-buttom md:border-0 border-r-4 border-b-4 border-l-4 border-[#401457] md:[border-radius:0%] [border-radius:25%]">
+                <div class="bg-[#f8efff] md:bg-[#f8efff] flex justify-center items-none lg:items-end overflow-hidden md:overflow-visible w-[320px] h-[320px] md:w-full md:h-full md:rounded-[0] rounded-[100%]">
+                    <img src="{{ asset($item->image) }}" {{ $loop->last ? 'w-[120%] h-[120%]' : ($loop->index === 0 ? 'w-[60%] lg:w-[50%]' : 'w-[90%] lg:w-[110%]') }} alt="" class="w-[80%] h-auto object-contain object-buttom md:border-0 border-r-4 border-b-4 border-l-4 border-[#401457] md:[border-radius:0%] [border-radius:25%]">
                 </div>
             </div>
             <div class="col-span-2 flex justify-center text-[13px] items-center xl:text-[15px] p-4 text-justify" data-aos="fade-left" data-aos-duration="1000">

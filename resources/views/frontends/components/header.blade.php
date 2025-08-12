@@ -19,7 +19,7 @@
                     $locale = session('locale', app()->getLocale());
                     $languages = [
                         'en' => ['label' => 'English', 'flag' => 'en_flag.jpg'],
-                        'kh' => ['label' => 'Khmer', 'flag' => 'kh_flag.png'],
+                        'kh' => ['label' => 'ភាសាខ្មែរ', 'flag' => 'kh_flag.png'],
                         'ch' => ['label' => 'Chinese', 'flag' => 'ch_flag.png'],
                     ];
                 @endphp
