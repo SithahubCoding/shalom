@@ -8,7 +8,7 @@
         <h1 class="text-[30px] md:text-[50px] text-center uppercase leading-[30px] lg:leading-[55px] text-[#401457]">
             {{ $hero->title[app()->getlocale()] }}
         </h1>
-        <div class="flex items-center justify-center md:justify-center">
+        <div class="flex items-center mt-3 justify-center md:justify-center">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScVamkswJpHoulIwjaWxB1_QL_RkVIg3Xd8gfrGkCyWESmzGQ/viewform?usp=header"
                 class="inline-flex items-center gap-4 px-4 py-2 mt-2 uppercase bg-[#401457] rounded-full">
                 <span class="font-[600] text-[#fff]">{{ __('messages.book_now') }}</span>
@@ -73,9 +73,17 @@
         <!-- 3.update -->
         <div class="grid grid-cols-1 lg:grid-cols-3 items-center justify-center my-2 md:my-5 xl:my-10 sm:bg-[#fff] md:bg-[#f8efff] overflow-hidden border-s-3 ">
             <div class="flex flex-col items-center justify-center w-full h-full" data-aos="fade-up" data-aos-duration="1000">
-                <div class="bg-[#f8efff] md:bg-[#f8efff] flex justify-center items-none lg:items-end overflow-hidden md:overflow-visible w-[320px] h-[320px] md:w-full md:h-full md:rounded-[0] rounded-[100%]">
-                    <img src="{{ asset($item->image) }}" {{ $loop->last ? 'w-[120%] h-[120%]' : ($loop->index === 0 ? 'w-[60%] lg:w-[50%]' : 'w-[90%] lg:w-[110%]') }} alt="" class="w-[80%] h-auto object-contain object-buttom md:border-0 border-r-4 border-b-4 border-l-4 border-[#401457] md:[border-radius:0%] [border-radius:25%]">
+                <!-- <div class="bg-[#f8efff] md:bg-[#f8efff] flex justify-center items-none lg:items-end overflow-hidden md:overflow-visible w-[320px] h-[320px] md:w-full md:h-full md:rounded-[0] rounded-[100%]">
+                    <img src="{{ asset($item->image) }}" alt="" class="@if ($item->id == 4) w-full  @endif w-[80%] h-auto object-contain object-buttom md:border-0 border-r-4 border-b-4 border-l-4 border-[#401457] md:[border-radius:0%] [border-radius:25%]">
+                </div> -->
+                <div class="bg-[#f8efff] md:bg-[#f8efff] flex justify-center lg:items-end overflow-hidden md:overflow-visible w-[320px] h-[320px] md:w-full md:h-full md:rounded-none rounded-full">
+                    <img
+                        src="{{ asset($item->image) }}"
+                        alt=""
+                        class="{{ $item->id == 4 ? 'w-full' : 'w-[80%]' }} h-auto object-contain object-bottom md:border-0 border-r-4 border-b-4 border-l-4 border-[#401457] md:rounded-none rounded-[25%]"
+                    >
                 </div>
+
             </div>
             <div class="col-span-2 flex justify-center text-[13px] items-center xl:text-[15px] p-4 text-justify" data-aos="fade-left" data-aos-duration="1000">
                 <div class=" items-center">
