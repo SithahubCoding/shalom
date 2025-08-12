@@ -80,7 +80,7 @@
                     <img
                         src="{{ asset($item->image) }}"
                         alt=""
-                        class="{{ $item->id == 4 ? 'w-full' : 'w-[80%]' }} h-auto object-contain object-bottom md:border-0 border-r-4 border-b-4 border-l-4 border-[#401457] md:rounded-none rounded-[25%]"
+                        class="{{ $item->id == 4 ? 'w-100% h-full lg:h-[400px]' : 'w-[80%]' }} h-auto object-contain object-bottom md:border-0 border-r-4 border-b-4 border-l-4 border-[#401457] md:rounded-none rounded-[25%]"
                     >
                 </div>
 
