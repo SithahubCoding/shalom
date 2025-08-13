@@ -20,7 +20,7 @@
                     $languages = [
                         'en' => ['label' => 'English', 'flag' => 'en_flag.jpg'],
                         'kh' => ['label' => 'ភាសាខ្មែរ', 'flag' => 'kh_flag.png'],
-                        'ch' => ['label' => 'Chinese', 'flag' => 'ch_flag.png'],
+                        'ch' => ['label' => '中文', 'flag' => 'ch_flag.png'],
                     ];
                 @endphp
 
