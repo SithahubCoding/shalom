@@ -54,5 +54,5 @@ return [
     'form_job_title'=>'Your job title',
 
 
-
+    'see_more'=>'Many More​'
 ];
