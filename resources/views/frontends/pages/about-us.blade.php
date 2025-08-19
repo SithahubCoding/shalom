@@ -58,7 +58,7 @@
         <h1 class="text-[22px] xl:text-[30px] uppercase leading-[30px]">{{ $core->title[app()->getLocale()] }}</h1>
 
         <div class="flex flex-col md:flex-row items-center gap-10 text-[14px] xl:text-[16px] py-5">
-            <div class="text-[14px] xl:text-[16px] text-justify">
+            <div class="prose text-[14px] xl:text-[16px] text-justify">
                 {!! $core->content[app()->getLocale()] !!}
             </div>
             <img src="{{ asset($core->icon) }}" alt="" class="w-40 h-auto order-1 md:order-none" loading="lazy">
