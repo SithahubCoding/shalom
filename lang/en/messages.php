@@ -23,7 +23,7 @@ return [
     'Q' => 'Q',
     'A' => 'A',
 
-
+    
     'what_we_do' => "What We Do",
     'more_details' => "More Detail",
     'email' => "Email Address",
@@ -52,7 +52,9 @@ return [
     'your_company'=>'Your company name',
     'job_title' => 'Profession',
     'form_job_title'=>'Your job title',
-
+    'imformation_footer' => 'Information',
+    'our_media_footer' => 'Our Media',
+    'contact_footer'=>'Contact',
 
     'see_more'=>'Many More​',
     'sell_last'=>'Show Last'

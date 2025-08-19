@@ -65,7 +65,7 @@
     <section class="w-full bg-[#f8efff] relative">
         <div class="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center py-10 lg:px-10 overflow-hidden">
             <div class="px-4 text-[#401457] order-1 md:order-none" data-aos="fade-right" data-aos-duration="1000">
-                <h1 class="text-[30px] md:text-[50px] uppercase lg:leading-[55px]">{{ $hero->title[app()->getLocale()] }}
+                <h1 class="text-[30px] md:text-[48px] uppercase lg:leading-[55px]">{{ $hero->title[app()->getLocale()] }}
                 </h1>
 
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScVamkswJpHoulIwjaWxB1_QL_RkVIg3Xd8gfrGkCyWESmzGQ/viewform?usp=header"

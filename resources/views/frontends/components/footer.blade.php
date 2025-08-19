@@ -1,7 +1,7 @@
     <section class="bg-[#401457] py-10 px-4 relative overflow-visible">
         <div class="max-w-7xl mx-auto relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10">
             <div>
-                <h2 class="text-[#fff] text-[22px] xl:text-[30px] font-semibold">Information</h2>
+                <h2 class="text-[#fff] text-[22px] xl:text-[30px] font-semibold">{{ __('messages.imformation_footer') }}</h2>
                 <ul class="space-y-2 py-5">
                     <li
                         class="text-[14px] xl:text-[16px] text-[#fff] {{ Route::is('home') ? 'font-[700] underline' : 'font-[400] hover:underline' }}">
@@ -39,7 +39,7 @@
             </div>
 
             <div>
-                <h2 class="text-[#fff] text-[22px] xl:text-[30px] font-semibold">Our Media</h2>
+                <h2 class="text-[#fff] text-[22px] xl:text-[30px] font-semibold">{{ __('messages.our_media_footer') }}</h2>
 
                 <div class="text-white flex flex-col items-start w-full">
                     <div class="flex items-center justify-center gap-6 md:gap-10 py-5">
@@ -137,7 +137,7 @@
             </div>
 
             <div>
-                <h2 class="text-[#fff] text-[22px] xl:text-[30px] font-semibold">Contact</h2>
+                <h2 class="text-[#fff] text-[22px] xl:text-[30px] font-semibold">{{ __('messages.contact_footer') }}</h2>
                 <ul class="ml-2 py-5 text-[14px] xl:text-[16px] text-[#fff] space-y-2 font-[300]">
                     <li><span class="font-[700]">{{ __('messages.email') }}:</span> <a href="mailto:{{ $contacts->email }}"
                             class="">{{ $contacts->email }}</a></li>

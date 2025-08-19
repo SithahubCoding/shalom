@@ -12,7 +12,7 @@
             </div>
 
             <div class="px-4 text-[#401457] order-1 md:order-none" data-aos="fade-left" data-aos-duration="1000">
-                <h1 class="text-[30px] md:text-[50px] uppercase lg:leading-[55px]">{{ $hero->title[app()->getLocale()] }}</h1>
+                <h1 class="text-[30px] md:text-[45px] uppercase lg:leading-[55px]">{{ $hero->title[app()->getLocale()] }}</h1>
 
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScVamkswJpHoulIwjaWxB1_QL_RkVIg3Xd8gfrGkCyWESmzGQ/viewform?usp=header"
                     class="inline-flex items-center gap-4 px-4 py-2 mt-2 uppercase bg-[#401457] rounded-full">
