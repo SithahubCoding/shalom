@@ -104,6 +104,13 @@
                             </a>
                         </li>
                         <li
+                            class="nav-link {{ Request::is('event-backend') ? 'bg-[#401457] rounded-md !text-[#ffffff]' : '' }}">
+                            <a href="{{ url('event-backend') }}">
+                                <i class="fa-solid fa-industry icon"></i>
+                                <span class="text nav-text">Our Event</span>
+                            </a>
+                        </li>
+                        <li
                             class="nav-link {{ Request::is('aboutlist') ? 'bg-[#401457] rounded-md !text-[#ffffff]' : '' }}">
                             <a href="{{ url('aboutlist') }}">
                                 <i class="fa-solid fa-address-card icon"></i>
