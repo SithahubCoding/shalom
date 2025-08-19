@@ -35,6 +35,9 @@ body{
     transition: var(--tran-05);
 }
 
+/* cole-value */
+
+
 /* sidebar */
 .sidebar{
     position: fixed;

@@ -53,7 +53,7 @@
 </section>
 
 {{-- Core values --}}
-<section class="w-full bg-[#401457] py-10 text-[#fff] px-4 md:px-10 overflow-hidden">
+<section class="w-full  border-[#f8efff]  bg-[#401457] py-10 text-[#fff] px-4 md:px-10 overflow-hidden rounded-e-[100px]">
     <div class="w-full max-w-7xl mx-auto" data-aos="fade-right" data-aos-duration="1000">
         <h1 class="text-[22px] xl:text-[30px] uppercase leading-[30px]">{{ $core->title[app()->getLocale()] }}</h1>
 
@@ -65,6 +65,7 @@
         </div>
     </div>
 </section>
+
 
 {{-- team --}}
 <section class="w-full pt-10 text-[#401457] px-4 md:px-10">
