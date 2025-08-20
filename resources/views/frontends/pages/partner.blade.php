@@ -64,7 +64,7 @@
                 <div class="w-full max-w-7xl mx-auto">
                     <div class="flex items-center justify-center py-6 md:py-10 gap-4 md:gap-20 overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
                         <img src="{{ asset($item->our_logo) }}" alt="" class="w-12 h-auto md:w-20 md:h-auto">
-                        <p class="text-[13px] xl:text-[15px] font-[600]">and</p>
+                        <p class="text-[13px] xl:text-[15px] font-[600]">{{ __('messages.and') }}</p>
                         <img src="{{ asset($item->partner_logo) }}" alt="" class="w-12 h-auto md:w-20 md:h-auto">
                     </div>
                 </div>
