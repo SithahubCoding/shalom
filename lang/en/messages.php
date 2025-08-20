@@ -23,7 +23,7 @@ return [
     'Q' => 'Q',
     'A' => 'A',
 
-    
+
     'what_we_do' => "What We Do",
     'more_details' => "More Detail",
     'email' => "Email Address",
@@ -57,5 +57,6 @@ return [
     'contact_footer'=>'Contact',
 
     'see_more'=>'Many More​',
-    'sell_last'=>'Show Last'
+    'sell_last'=>'Show Last',
+    'and'=>'and',
 ];
